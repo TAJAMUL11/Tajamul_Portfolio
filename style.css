@@ -61,6 +61,14 @@ section{  /* this section helps in adding space in each section */
     cursor: default;
 
 }
+.logo:hover{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+
+
+}
 
 .navbar a{
     font-size: 1.7rem;
@@ -105,10 +113,8 @@ section{  /* this section helps in adding space in each section */
 .home-img img:hover{
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    transform: scale(0.99);
-    background-color: var(--main-color);
-    box-shadow: none;
-    
+    transform: scale(0.95);
+    background-color: var(--main-color);  
 }
 
 .home-content h3{
@@ -197,8 +203,8 @@ span{
 }
 
 .about-img img:hover{
-   transform: scale(0.99);
-   box-shadow: none; 
+   transform: scale(0.95);
+   
 }
 
 .heading{
@@ -296,7 +302,7 @@ span{
 .Projects-container .Projects-box{
     position: relative;
     border-radius: 2rem;
-    /* box-shadow: 0 0 1rem var(--main-color); */
+    /* box-shadow: .1rem .3rem .3rem var(--main-color); */
     overflow: hidden;
     display: flex;
 
