@@ -13,15 +13,22 @@
   text-decoration: none;
 }
 
+:root{
+  --second-bg-color : #323946;
+  --text-color : #fff;
+}
+
 body {
   margin: 2.2rem;
+  background-color: var(--second-bg-color);
+  
 }
 
 div#resume {
   min-width: 310px;
   font: 16px Helvetica, Avernir, sans-serif;
   line-height: 24px;
-  color: #000;
+  color: var(--text-color);
 }
 
 div#resume h1 {
@@ -30,7 +37,7 @@ div#resume h1 {
   font-size: 3rem;
   font-weight: 200;
   letter-spacing: -2px;
-  border-bottom: 1px solid #999;
+  border-bottom: 5px solid #999;
   line-height: 50px;
 }
 
@@ -39,6 +46,7 @@ div#resume h3 {
   margin: 1.3rem 0;
   position: relative;
   font-weight: 200;
+  
 }
 
 div#resume h3 span {
@@ -48,7 +56,7 @@ div#resume h3 span {
   font-style: italic;
   font-family: Georgia, serif;
   font-size: 0.8rem;
-  color: #666;
+  color: var(--text-color);
   font-weight: normal;
 }
 
@@ -60,8 +68,9 @@ div#resume p i {
 }
 
 
+
 div#resume a{
-  color: #000;
+  color: var(--text-color);
   text-decoration: none;
   border-bottom: 1px solid 
 }
@@ -69,6 +78,15 @@ div#resume a:hover {
   border-bottom-style: solid;
   color: red;
   cursor: pointer;
+}
+h3 i{
+  color: #0ef;
+  font-size: 1.5rem;
+
+}
+p i{
+  color: #0ef;
+  font-size: 1.5rem;
 }
 
 
@@ -98,22 +116,29 @@ div#resume dl dd {
   padding-left: 26px;
 }
 
+ul li{
+  list-style: none;
+}
+
+ul li i{
+  color: #0ef;
+  font-size: 1.5rem;
+}
+
 /* design image */
 
 div#resume img {
   float: right;
-  padding: 2px;
-  background-color: #0ef;
-  margin: 0 30px;
-  width: 30%;
-  max-width: 310px;
-  border-radius: 50%;
-  transition: 0.5s ease-in;
+  padding: 10px;
+  margin: 0 30px; 
+  width: 19vw;
+  transform: rotate(-4.5deg);
+  /* border-radius: 50%; */
+  transition: 0.3s ease-in;
 }
 
 div#resume img:hover {
- box-shadow: 0 0 1rem #0ef;
-  transform: scale(0.98);
+  transform: rotate(-1.8deg);
   background-color: transparent;
 }
 
@@ -197,25 +222,25 @@ div#resume img:hover {
     <div id="resume">
 
         <img src="CVImg.jpg" alt="Profile">
-        <h1 style="color:#0ef;">Tajamul Farooz Wani</h1>
+        <h1>Tajamul Farooz Wani</h1>
         <h3> <i class='bx bx-code-block'></i> Frontend Web developer</h3>
         <p><i class='bx bxs-phone-call'></i> +91 8491990977</p>
         <p><i class='bx bx-current-location'></i> Srinagar, Jammu and Kashmir</p>
         <p><i class='bx bx-envelope'></i><a href="mailto:tajamul.270@gmail.com">tajamul.270@gmail.com</a></p>
         
         <dl>
-            <dt style="color:#0ef;font-size: 1.7rem;">Education
+            <dt>Education
             <dd>
-                <h2 style="color: brown; font-size: 1.4rem;">National Institute of Electronics & Information Technology</h2>
-                <p style="color: #666;"> <i class='bx bxs-graduation'></i> Diploma</p>
+                <h2>National Institute of Electronics & Information Technology</h2>
+                <p> <i class='bx bxs-graduation'></i> Diploma</p>
                 <p><strong>Major:</strong> Web development<br /></p>
                 <p>
                     <i class='bx bxs-calendar'></i> 2021-2023
                 </p>
                 <hr>
 
-                <h2 style="color: brown; font-size: 1.4rem;">Islamia College of Science and Commerce</h2>
-                <p style=" color: #666;"> <i class='bx bxs-graduation'></i> Bachelors</p>
+                <h2>Islamia College of Science and Commerce</h2>
+                <p> <i class='bx bxs-graduation'></i> Bachelors</p>
                 <p><strong>Major:</strong> Life Science<br /></p>
                 <p>
                     <i class='bx bxs-calendar'></i> 2017-2021
@@ -223,9 +248,9 @@ div#resume img:hover {
         </dl>
       
         <dl>
-            <dt style="color:#0ef;font-size: 1.7rem;"> Experience
+            <dt> Experience
             <dd>
-                <h3 style="font-size: 1.5rem; color: brown;">"Fresher"</h3>
+                <h3>"Fresher"</h3>
                 <p>"Aspiring Front-End Web Developer with a passion for creating visually appealing and user-friendly interfaces.
                      Proficient in HTML, CSS, and JavaScript, eager to contribute skills and learn in a collaborative team environment."
 
@@ -235,9 +260,9 @@ div#resume img:hover {
             </dd>
         </dl>
         <dl>
-            <dt style="color:#0ef; font-size: 1.7rem;">Hobbies
+            <dt>Hobbies
             <dd>
-                <ul style="list-style: none;">
+                <ul>
                     <li><i class='bx bx-swim'></i> Swimming</li>
                     <li><i class='bx bxl-trip-advisor'></i> Travelling</li>
                     <li><i class='bx bx-book-reader' ></i> Reading</li>
