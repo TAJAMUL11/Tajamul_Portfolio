@@ -42,7 +42,7 @@
     }
     .main-content{
       min-height: 25vh;
-      box-shadow: 0 0 .7rem black;
+      box-shadow: 0 0 .7rem var(--text-color);
       padding: 45px;
       max-width: 30vw;
       margin: 0.7rem 2rem;
@@ -51,7 +51,7 @@
 
     }
     .main-content:hover{
-      box-shadow: 0 0 .9rem var(--text-color);
+      box-shadow: 0 0 .4rem var(--main-color);
     }
 
   .main-content h1{
@@ -95,14 +95,14 @@ h3 i{
 
 .main-content .Cv-img{
   width: 18vw;
-  /* border-radius: 5%; */
-  box-shadow: 0 0 .5rem var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
   /* education design */
 .education{
      min-height: 65vh;
-      box-shadow: 0 0 .9rem black;
+      box-shadow: 0 0 .9rem var(--text-color);
       padding: 50px;
       max-width: 65vw;
       position: absolute;
@@ -111,7 +111,7 @@ h3 i{
       transition: .4s ease-in;
 }
 .education:hover{
-  box-shadow: 0 0 .9rem var(--text-color);
+  box-shadow: 0 0 .4rem var(--main-color);
 }
 
 .education .edu-head{
@@ -160,7 +160,7 @@ tbody tr td{
 
 .expereince{
       min-height: 35vh;
-      box-shadow: 0 0 .7rem black;
+      box-shadow: 0 0 .7rem var(--text-color);
       padding: 70px;
       max-width: 50vw;
       margin: 1.7rem 3%;
@@ -169,7 +169,7 @@ tbody tr td{
 }
 
 .expereince:hover{
-  box-shadow: 0 0 .9rem var(--text-color);
+  box-shadow: 0 0 .4rem ;
 }
 
 .expereince .exp-head{
@@ -202,7 +202,7 @@ tbody tr td{
 
 .hobbies{
       max-height: 50vh;
-      box-shadow: 0 0 .7rem black;
+      box-shadow: 0 0 .7rem var(--text-color);
       padding: 30px;
       min-width: 30vw;
       margin: 1rem 4rem 3% 3%;
@@ -213,7 +213,7 @@ tbody tr td{
 
 }
 .hobbies:hover{
-  box-shadow: 0 0 .9rem var(--text-color);
+  box-shadow: 0 0 .4rem var(--main-color);
 }
 
 .hobbies .hobby-head{
@@ -247,15 +247,14 @@ li i{
 
 /* footer design */
 .foot{
-    min-width: 20vw;
-    box-shadow: 0 0 .7rem black;
-    padding: 10px;
+    min-height: 10vh;
+    min-width: 13vw;
+    /* box-shadow: 0 0 .7rem black; */
+    /* padding: 10px; */
     margin-bottom: 0;
     transition: 0.4s ease-in;
 }
-.foot:hover{
-  box-shadow: 0 0 .7rem white;
-}
+
 .foot .footer-body{
   display: flex;
   justify-content: center;
@@ -267,7 +266,7 @@ li i{
 .footer-body p{
   color: #0ef;
   font-size: 1.5rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   font-weight: 900;
   border-bottom: 3px solid var(--second-bg-color);
   
@@ -301,47 +300,57 @@ li i{
 
 
 
-@media (width <= 1000px){
+@media (width <= 1068px){
   div{
     margin: 2rem 1.4rem;
   }
+
+  .main-content{
+    min-height: 60vh;
+      max-width: 100vw;
+  }
   .main-content .Cv-img{
-      width: 19vw;
+    float: right;
+      width: 25vw;
     }
 
     .main-content h1{
-      font-size: 2rem;
+      font-size: 2.4rem;
       padding: 0;
+      border: none;
     }
 
     .main-content h3{
-      font-size: 1.44rem;
+      font-size: 2rem;
 
     }
     h3 i{
-      font-size: 1.6rem;
+      font-size: 2rem;
+    }
+
+    .main-content a{
+      font-size: 2.1rem;
     }
 
     .education{
-      min-height: 59vh;
-      max-width: 64vw;
+      min-height: 55vh;
+      max-width: 100vw;
+      position: static;
     }
 
     .edu-head h3{
-  font-size: 2.3rem;
+  font-size: 2.9rem;
   margin-bottom: 1.8rem;
 }
 
 .edu-head thead{
-  font-size: 1.7rem;
-  color: var(--text-color);
+  font-size: 2.3rem;
   font-weight: 100;
  
  
 }
 th i{
-  color: var(--main-color);
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   margin-right: 0.2rem;
   
 }
@@ -350,113 +359,440 @@ thead tr th{
 }
 
 tbody tr td{
-  padding: 1.2rem;
-  font-size: 1.44rem;
-  color: var(--text-color);
+  padding: 2.2rem;
+  font-weight: 300;
+  font-size: 2rem;
   margin: 2rem;
 }
 
 .expereince{
-  min-height: 35vh;
+  min-height: 50vh;
   padding: 50px;
-  max-width: 50vw;
+  max-width: 100vw;
 }
 .exp-head h3{
-  font-size: 1.9rem;
-  margin-bottom: 2rem;
+  font-size: 2.3rem;
+  margin-bottom: 2.1rem;
 }
 .exp-head h4{
 
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin-bottom: 1.2rem;
 
 }
 
 .exp-head p{
-  font-size: 1.4rem;
+  font-size: 1.9rem;
   line-height: 2;
 }
 
 .hobbies{
-  max-height: 47vh;
-  padding: 23px;
-  min-width: 30vw;
+  min-height: 30vh;
+  padding: 10px 30px 10px;
+  max-width: 100vw;
+  position: static;
+  margin-left: 3rem;
+}
+.hobby-head ul li{
+  font-size: 2rem;
+}
+
+li i{
+  font-size: 2rem;
 }
 
 .foot{
-  max-height: 33vh;
+  max-height: 10vh;
   padding: 12px;
-  min-width: 30vw;
+  min-width: 10vw;
 }
 .footer-body p{
-  font-size: 1.6rem;
+  font-size: 1.9rem;
 }
 .footer-body a{
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 
 
 }
-@media (width <= 991px){
+@media (width <= 912px){
+
   div{
-    margin: 8rem 6rem;
+    margin: 2rem 1.4rem;
   }
 
-  
   .main-content{
-        /* padding: 2rem 3%; */
-        min-height: 25vh;
-        max-width: 33vw;
-        
+    min-height: 60vh;
+      max-width: 100vw;
+  }
+  .main-content .Cv-img{
+    float: right;
+      width: 29vw;
     }
 
-    .main-content .Cv-img{
-      width: 19vw;
-    }
     .main-content h1{
-      font-size: 1.9rem;
+      font-size: 3rem;
       padding: 0;
+      
+    }
+  
+}
+
+@media (width <= 712px){
+  .main-content .Cv-img{
+    float: right;
+      width: 31vw;
     }
 
+    .main-content h1{
+      font-size: 3rem;
+      padding: 0;
+      
+    }
     .main-content h3{
-      font-size: 1.5rem;
-
+      font-size: 1.8rem;
     }
-    .education{
-      min-height: 45vh;
-      max-width: 50vw;
+    .main-content a{
+      font-size: 1.6rem;
     }
 
     .edu-head h3{
-  font-size: 2rem;
-  margin-bottom: 1rem;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+    .edu-head thead{
+      font-size: 2rem;
+      font-weight: 100;
+    
+    
+    }
+    th i{
+      font-size: 2rem;
+      margin-right: 0.2rem;
+      
+    }
+    thead tr th{
+      padding: 1.5rem;
+    }
+
+    tbody tr td{
+      padding: 2.5rem;
+      font-weight: 300;
+      font-size: 1.7rem;
+      margin: 2rem;
+    }
+
+    .exp-head h3{
+      font-size: 2.3rem;
+      margin-bottom: 2.6rem;
+    }
+    .exp-head h4{
+      font-size: 1.9rem;
+      margin-bottom: 1.2rem;
+
+    }
+
+    .exp-head p{
+      font-size: 1.7rem;
+      line-height: 1.9;
+    }
+
 }
 
-.edu-head thead{
-  font-size: 1.4rem;
+@media (width <= 657px){
+  .main-content .Cv-img{
+      width: 31vw;
+    }
+
+    .main-content h1{
+      font-size: 2.4rem;
+    }
+    .main-content h3{
+        font-size: 1.6rem;
+    }
+    .main-content a{
+      font-size: 1.6rem;
+    }
+
+
+    .edu-head thead{
+      font-size: 1.8rem;
+      font-weight: 100;
+    
+    
+    }
+    th i{
+      font-size: 1.8rem;
+      margin-right: 0.2rem;
+      
+    }
+
+    tbody tr td{
+      padding: 2.2rem;
+      font-weight: 300;
+      font-size: 1.6rem;
+      margin: 1.4rem;
+    }
+    .hobby-head ul li{
+      font-size: 1.8rem;
+    }
+    .foot p{
+      font-size: 1.4rem;
+    }
+    .foot a{
+      font-size: 1.4rem;
+    }
+
 
 }
-th i{
 
-  font-size: 1.3rem;
-  margin-right: 0.1rem;
-  
+@media (width <= 588px){
+
+  html{
+    font-size: 50%;
+    font-weight: 300;
+  }
+  .main-content .Cv-img{
+      width: 45vw;
+      margin-left: 7rem;
+      margin-bottom: 7rem;
+    }
+    .main-content h1{
+      font-size: 4rem;
+    }
+    .main-content h3{
+      font-size: 2rem;
+    }
+    .main-content h3 i{
+      font-size: 2rem;
+    }
+    .main-content a{
+      font-size: 2rem;
+    }
+
 }
-thead tr th{
-  padding: 1rem;
+
+@media (width <= 481px){
+  .main-content .Cv-img{
+      width: 50vw;
+      margin-left: 5rem;
+      margin-bottom: 5rem;
+    }
+    .main-content h1{
+      font-size: 3.2rem;
+    }
+    .main-content h3{
+      font-size: 1.8rem;
+    }
+    .main-content h3 i{
+      font-size: 1.8rem;
+    }
+    .main-content a{
+      font-size: 1.8rem;
+    }
+    /* .main-content{
+    min-height: 50vh;
+      max-width: 90vw;
+  } */
+  /* .expereince{
+    min-height: 50vh;
+      max-width: 90vw;
+  } */
+  /* .education{
+    min-height: 50vh;
+      max-width: 90vw;
+  } */
+  /* .foot{
+    min-height: 50vh;
+      max-width: 90vw;
+  } */
+  .edu-head h3{
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+  }
+
+    .edu-head thead{
+      font-size: 1.8rem;
+      font-weight: 100;
+    
+    
+    }
+    th i{
+      font-size: 1.8rem;
+      margin-right: 0.2rem;
+      
+    }
+    thead tr th{
+      padding: .9rem;
+    }
+
+    tbody tr td{
+      padding: 1rem;
+      font-weight: 800;
+      font-size: 1.6rem;
+      margin: 2rem;
+    }
+
+    .exp-head h4{
+      font-size: 2.1rem;
+      margin-bottom: 1.2rem;
+
+    }
+
+    .exp-head p{
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.9;
+    }
+
+    .footer-body P{
+      font-size: 1.8rem;
+    }
+    .footer-body a{
+      font-size: 1.8rem;
+    }
+
+
 }
 
-tbody tr td{
-  padding: 1rem;
-  font-size: 1.23rem;
+@media (width <= 385px) {
+  .main-content .Cv-img{
+      width: 55vw;
+      margin-left: 5rem;
+      margin-bottom: 5rem;
+    }
+    .main-content h1{
+      font-size: 2.8rem;
+    }
+    .main-content h3{
+      font-size: 1.6rem;
+    }
+    .main-content h3 i{
+      font-size: 1.6rem;
+    }
+    .main-content a{
+      font-size: 1.6rem;
+    }
 
-  margin: 1.5rem;
+    .edu-head h3{
+      font-size: 2.4rem;
+    }
+
+    .edu-head thead{
+      font-size: 1.2rem;
+      font-weight: 100;
+    
+    
+    }
+    th i{
+      font-size: 1.2rem;
+      margin-right: 0.2rem;
+      
+    }
+    thead tr th{
+      padding: 0.7rem;
+    }
+
+    tbody tr td{
+      padding: .5rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 1rem;
+    }
+
+    .exp-head h3{
+      font-size: 3rem;
+      margin-bottom: 2.6rem;
+    }
+    .exp-head h4{
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+
+    }
+
+    .exp-head p{
+      font-size: 1.5rem;
+      line-height: 1.9;
+    }
+
+
 }
 
+@media (width <= 309px) {
+  .main-content .Cv-img{
+      width: 65vw;
+      /* margin-left: 5rem;
+      margin-bottom: 5rem; */
+    }
+    .main-content h1{
+      font-size: 1.87rem;
+    }
+    .main-content h3{
+      font-size: 1.3rem;
+    }
+    .main-content h3 i{
+      font-size: 1.3rem;
+    }
+    .main-content a{
+      font-size: 1.3rem;
+    }
 
-  
+    .edu-head h3{
+      font-size: 2.2rem;
+    }
+
+    .edu-head thead{
+      font-size: 1.1rem;
+      font-weight: 100;
+    
+    
+    }
+    th i{
+      font-size: 1.1rem;
+      margin-right: 0.2rem;
+      
+    }
+    thead tr th{
+      padding: 0.6rem;
+    }
+
+    tbody tr td{
+      padding: .3rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 1rem;
+    }
+
+    .exp-head h3{
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .exp-head h4{
+      font-size: 1.7rem;
+      margin-bottom: 1.2rem;
+
+    }
+
+    .exp-head p{
+      font-size: 1.2rem;
+      line-height: 1.9;
+    }
+    .hobby-head ul li{
+      font-size: 1.3rem;
+    }
+
+    .foot p{
+      font-size: 1.3rem;
+    }
+    .foot a{
+      font-size: 1.3rem;
+    }
+
+
 }
+
 
     </style>
 </head>
@@ -519,8 +855,7 @@ tbody tr td{
 
                 <h4>"Fresher"</h4>
                 <p>As a fresher with a passion for crafting engaging and user-friendly web experiences, I bring a solid foundation in front-end development.
-                   Proficient in HTML, CSS, and JavaScript, I have hands-on experience translating design concepts into responsive and intuitive interfaces.
-                   Eager to contribute my skills and learn from experienced professionals in a dynamic team environment."
+                   Eager to contribute my skills and learn from experienced professionals in a dynamic team environment.
                 </p>
           </div>
         </div>
@@ -536,6 +871,7 @@ tbody tr td{
                 </ul>
               </div>
           </div>
+          <hr>
 
           <footer class="foot">
             <div class="footer-body">
