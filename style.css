@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -30,7 +31,7 @@ body{
 }
 
 section{  /* this section helps in adding space in each section */
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 10rem 9% 2rem;
 }
 
@@ -56,25 +57,33 @@ section{  /* this section helps in adding space in each section */
 
 .logo{
     font-size: 2.5rem;
-    color: var(--text-color);
-    font-weight: 600;
-    cursor: default;
-
-}
-.logo:hover{
-    font-size: 2.5rem;
     color: var(--main-color);
     font-weight: 600;
     cursor: default;
-
-
+    
 }
+
 
 .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: 0.3s;
+    position: relative; 
+
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: var(--main-color);
+    transition: all ease 1s;
+}
+.navbar a:hover::after{
+    width: 100%;
 
 }
 
@@ -108,14 +117,32 @@ section{  /* this section helps in adding space in each section */
     transition: 0.5s ease;
     background-color: var(--main-color);
     box-shadow: 0 0 1.6rem var(--main-color);
+    animation: floatIn 2.2s  ease-in-out infinite;
+    /* margin-top: 3rem; */
 }
 
-.home-img img:hover{
+/* .home-img img:hover{
     border: 2px solid var(--main-color);
     border-radius: 50%;
     transform: scale(0.95);
     background-color: var(--main-color);  
-}
+} */
+@keyframes floatIn {
+    0%{
+        transform: translateY(0);
+       
+    }
+     50% { 
+        transform: translateY(-2.4rem);
+        
+        
+     }
+    
+    100% { 
+        transform: translateY(0);
+        
+     }
+  }
 
 .home-content h3{
     font-size: 3.2rem;
@@ -127,6 +154,8 @@ section{  /* this section helps in adding space in each section */
 }
 span{
     color: var(--main-color);
+    font-weight: 500;
+    
 
 }
 
@@ -165,7 +194,7 @@ span{
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
-    border-radius: 4rem;
+    border-radius: 1rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--second-bg-color);
@@ -177,6 +206,11 @@ span{
 .btn:hover{
     box-shadow: none;
 }
+.Hire{
+    margin-left: 2rem;
+    box-shadow: 0 0 1rem lightcoral;
+    background-color: lightcoral;
+}
 
 /* About section */
 
@@ -187,6 +221,7 @@ span{
     align-items: center;
     gap: 2rem;
     background: var(--second-bg-color);
+    text-align: center;
 
 }
 
@@ -202,10 +237,10 @@ span{
 
 }
 
-.about-img img:hover{
+/* .about-img img:hover{
    transform: scale(0.95);
    
-}
+} */
 
 .heading{
     text-align: center;
@@ -213,27 +248,29 @@ span{
 
 }
 .about-content h2{
-    text-align: left;
+    text-align: center;
     line-height: 1.2;
+    margin-bottom: 4rem;
 }
 
-.about-content h3{
+/* .about-content h3{
     font-size: 2.2rem;
 
-}
+} */
 .about-content p{
     font-size: 1.6rem;
     margin: 2rem 0 1rem;
 }
 
 
-/* Skills section */
+/* services section */
 
-.skills h2{
-    margin-bottom:5rem ;
+.services h2{
+    margin-bottom: 2rem ;
 
 }
-.skills-container{
+
+.services-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,43 +278,54 @@ span{
     gap: 2rem;
 
 }
-.skills-container .skills-box{
+
+.services-container .services-box{
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
+    padding: 4rem 3rem 4rem;
+    border-radius: 1%;
     text-align: center;
-    border: .2rem solid var(--bg-color);
     transition: 0.5s ease;
+    box-shadow: .1rem .5rem .4rem .57rem var(--second-bg-color);
+    margin: 0 .5rem;
 }
-.skills-container .skills-box:hover{
-    border-color:var(--main-color);
-    transform: scale(0.98);
-    box-shadow: 0 0 1rem var(--main-color);
+.services-container .services-box:hover{
+    transform: scale(0.95);
 }
 
-.skills-box i{
+.services-box i{
     font-size: 8rem;
     color: var(--main-color);
+    font-weight: 400;
     
 }
-.skills-box h3{
+.services-box h3{
     font-size: 2.4rem;
-    font-weight: 200;
-    text-decoration: underline;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
 
 }
 
-/* .skills-box ul{
+/* .services-box ul{
     margin: 1rem 0 2rem;
 }  */
 
-.skills-box ul li{
+.services-box p{
+    font-size: 1.5rem;
+}
+
+.services-box ul li{
+    display: inline-block;
     list-style: none;
-    font-size: 2.1rem;
+    font-size: 1.6rem;
     margin: .7rem 0;
     color: var(--main-color);
     font-weight: 600;
+}
+.services-box ul li i{
+    font-size: 4.6rem;
+    margin: 0 2rem;
+    box-shadow: 0 0 .7rem var(--main-color);
 }
 
 
@@ -422,6 +470,7 @@ span{
 }
 .footer-text{
     font-size: 1.6rem;
+    font-weight: 500;
 
 }
 .footer-icon a{
@@ -441,6 +490,7 @@ span{
 .footer-icon a i{
     font-size: 2.4rem;
     color: var(--second-bg-color);
+    font-weight: 500;
 
 }
 
@@ -448,9 +498,32 @@ span{
     /* Media Queries */
 
 /** This is  for the overall sections*/
+@media (width <= 1400px){
+    .Project-layer h4{
+        font-size: 2rem;
+    }
+    .Project-layer p{
+        font-size: 1.6rem;
+    }
+    .Project-layer a{
+        margin-top: 0.8rem;
+        
+    }
+
+}
 @media (max-width: 1200px){
     html{
         font-size: 55%;
+    }
+    .Project-layer h4{
+        font-size: 1.8rem;
+    }
+    .Project-layer p{
+        font-size: 1.5rem;
+    }
+    .Project-layer a{
+        margin-top: 0.8rem;
+        
     }
 }
 @media (max-width: 991px){
@@ -460,7 +533,7 @@ span{
     section{
         padding: 10rem 3% 2rem;
     }
-    .skills{
+    .services{
         padding-bottom: 7rem;
     }
     .Projects{
@@ -472,6 +545,17 @@ span{
     .footer{
         padding: 2rem 3%;
     }
+    .Project-layer h4{
+        font-size: 1.7rem;
+    }
+    .Project-layer p{
+        font-size: 1.2rem;
+    }
+    .Project-layer a{
+        margin-top: 0.8rem;
+        
+    }
+
 }
 
 /* this is for menu icon*/
@@ -528,7 +612,7 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
-    .skills h2{
+    .services h2{
         margin-bottom: 3rem;
     }
 
@@ -538,6 +622,12 @@ span{
     .Projects-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .Project-layer h4{
+        font-size: 2.3rem;
+    }
+    .Project-layer p{
+        font-size: 1.4rem;
+    }
 
 }
 
@@ -545,6 +635,9 @@ span{
 @media (max-width: 617px){
     .Projects-container{
         grid-template-columns: 1fr;
+    }
+    .header .logo{
+        font-size: 2.3rem;
     }
 }
 
@@ -559,15 +652,37 @@ span{
         width: 4rem;
         height: 4rem;
     }
+    .Project-layer h4{
+        font-size: 2.6rem;
+    }
 }
 
 @media (max-width: 365px){
     .home-img img{
         width: 90vw;
     }
+    .home-content h1{
+        font-size: 4rem;
+    }
+    .home-content h3{
+        font-size: 2rem;
+    }
+    .header .logo{
+        font-size: 1.97rem;
+    }
 
     .about-img img{
         width: 90vw;
+    }
+
+    .Project-layer h4{
+        font-size: 2rem;
+    }
+    .Project-layer p{
+        font-size: 1.3rem;
+    }
+    .Project-layer a {
+        padding: auto;
     }
 
     .footer {
