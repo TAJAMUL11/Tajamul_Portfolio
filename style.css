@@ -589,6 +589,9 @@ span{
         margin: 3rem 0;
 
     }
+    .navbar a:hover::after{
+        width: 0;
+    }
     /* to adjust the content of home section and  make it wrap in columns*/
     .home{
         flex-direction: column;
