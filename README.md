@@ -10,5 +10,4 @@ This code is not intended for unauthorized use or distribution. It is provided h
 If you have any questions or need clarification regarding the use of this code, please contact me:
 
 **Email: thetj4054@gmail.com
-GitHub: Tajamul11**
 Thank you for your understanding and cooperation.

@@ -9,31 +9,35 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            font-family: monospace;
             
         }
         .main_content{
             display: flex;
             flex-wrap: wrap;
-            font-size: 2rem;
+            /* font-size: 2rem; */
             justify-content: center;
             align-items: center;
             text-align: center;
 
         }
 
-        .main_content h1{
+        .main_content h2{
             font-size: 4.1rem;
             margin-bottom: 3rem;
             font-weight: 400;
             color: #fff;
             margin-top: 2rem;
-            display:flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+
+           
         }
        
 
         .main_content p{
+            position: absolute;
+            top: 30%;
+            /* bottom: 40%; */
             font-size: 2rem;
             color: whitesmoke;
             font-weight: 500;
@@ -52,7 +56,7 @@ body{
     
 }
 
-.context h1{
+.context h2{
     text-align: center;
     color: #fff;
     font-size: 50px;
@@ -83,7 +87,7 @@ body{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(245, 248, 250,0.3);
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -91,8 +95,8 @@ body{
 
 .circles li:nth-child(1){
     left: 25%;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     animation-delay: 0s;
 }
 
@@ -114,8 +118,8 @@ body{
 
 .circles li:nth-child(4){
     left: 40%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     animation-delay: 0s;
     animation-duration: 18s;
 }
@@ -129,15 +133,15 @@ body{
 
 .circles li:nth-child(6){
     left: 75%;
-    width: 110px;
-    height: 110px;
+    width: 70px;
+    height: 70px;
     animation-delay: 3s;
 }
 
 .circles li:nth-child(7){
     left: 35%;
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     animation-delay: 7s;
 }
 
@@ -159,8 +163,8 @@ body{
 
 .circles li:nth-child(10){
     left: 85%;
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     animation-delay: 0s;
     animation-duration: 11s;
 }
@@ -186,16 +190,12 @@ body{
         
         @media (width < 768px){
             html{
-                font-size: 70%
+                font-size: 60%
             }
         }
 
         @media ( width < 561px){
-
-            html{
-                font-size: 60%
-            }
-            .main_content h1{
+            .main_content h2{
                 font-size: 3.6rem;
 
             }
@@ -204,9 +204,12 @@ body{
             }
         }
 
-        @media ( width < 361px){
-            .main_content h1{
-                font-size: 2.8rem;
+        @media ( max-width < 365px){
+            html{
+                font-size: 45%;
+            }
+            .main_content h2{
+                font-size: 2.4rem;
 
             }
             .main_content p{
@@ -234,9 +237,9 @@ body{
                 <li></li>
         </ul>
         <div class="main_content">
-            <h1>Sorry for the inconvenience</h1>
+            <h2>Sorry for the Inconvenience </h2>
     
-            <p>The page needs some adjustments and updates, Will be updated soon.</p><br>
+            <p>The page needs some adjustments and will be updated soon.</p><br>
             
             
     
