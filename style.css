@@ -134,7 +134,7 @@ section{  /* this section helps in adding space in each section */
     }
   
      50% { 
-        transform: translateY(-1.4rem);  
+        transform: translateY(-2rem);  
      }
 
     
@@ -230,16 +230,11 @@ span{
 }
 
 .about-img img{
-    width: 25vw;
+    width: 20vw;
     margin-bottom: 5%;
-    /* border: 2px solid var(--main-color); */
     border-radius: 50%;
-    /* background-color: cornflowerblue; */
-    background-color: var(--main-color);
     transition: 0.5s ease;
-    margin-right: 1.7rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    
+    margin-right: 1.7rem;  
 }
 
 
@@ -479,6 +474,12 @@ span{
     font-weight: 400;
 
 }
+.footer-text .year{
+    font-weight: 600;
+    letter-spacing: .1rem;
+    display: inline-block;
+    color: var(--bg-color);
+}
 /* .footer-icon a{
     display: inline-flex;
     justify-content: center;
@@ -696,11 +697,12 @@ span{
 
     .footer {
         flex-direction: column-reverse;
+       
     }
 
     .footer p{
         text-align: center;
-        margin-top: 2rem ;
+        margin-top: 1rem ;
     }
 
 
