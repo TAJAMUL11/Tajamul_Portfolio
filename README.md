@@ -1,7 +1,7 @@
 
 **Important: Please Read Before Using**
 
-This project is the intellectual property of Tajamul Farooz Wani. By accessing, using, or copying any part of this repository, you agree to abide by the terms outlined in the license file.
+This project is the intellectual property of Tajamul Wani. By accessing, using, or copying any part of this repository, you agree to abide by the terms outlined in the license file.
 
 **Warning**
 This code is not intended for unauthorized use or distribution. It is provided here for showcasing the skills and portfolio. If you are interested in using this code for any other purpose, please reach out to me for permission.
