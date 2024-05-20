@@ -374,7 +374,7 @@ span{
     left: 0;
     width:100% ;
     height: 100%;
-    background: linear-gradient(rgba(0 ,0, 0, 0.1),var(--main-color));
+    background: #222222cd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,11 +393,12 @@ span{
 }
 
 .Project-layer h4{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--text-color);
 
 }
 .Project-layer p{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: .3rem 0 1rem;
 }
 .Project-layer a{
@@ -412,6 +413,7 @@ span{
 .Project-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
+    box-shadow: none;
 
 }
 
@@ -635,10 +637,7 @@ span{
         grid-template-columns: repeat(2, 1fr);
     }
     .Project-layer h4{
-        font-size: 2.3rem;
-    }
-    .Project-layer p{
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
 }
@@ -667,6 +666,9 @@ span{
     .Project-layer h4{
         font-size: 2.6rem;
     }
+    .Project-layer p{
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 365px){
@@ -691,7 +693,7 @@ span{
         font-size: 2rem;
     }
     .Project-layer p{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .Project-layer a {
         padding: auto;
