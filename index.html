@@ -174,14 +174,14 @@
                     <div class="contact-form">
                         <form name="contact" method="POST" data-netlify="true">
                             <div class="inputBox">
-                                <input type="text" placeholder="FullName" required>
-                                <input type="email" placeholder="Email" required>
+                                <input type="text" placeholder="FullName" required name="fullname">
+                                <input type="email" placeholder="Email" required name="Email">
                             </div>
                             <div class="inputBox">
-                                <input type="number" placeholder="Number" required>
-                                <input type="text" placeholder=" Email Subject " required>
+                                <input type="number" placeholder="Number" required name="Number">
+                                <input type="text" placeholder=" Email Subject " required name="EmailSubject">
                             </div>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                            <textarea name="UserMessage" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                             <input type="submit" value="Send Message" class="btn">
 
                         </form>
