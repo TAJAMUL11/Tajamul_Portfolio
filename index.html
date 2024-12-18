@@ -46,11 +46,39 @@
 
 <section class="about" id="about">
     <div class="about-img">
-        <img src="./assets/ProfilePic.jpg">
+        <img src="./assets/About.png">
     </div>
     <div class="about-content">
         <h2 class="heading"> About <span>Me</span></h2>
-        <p>In the digital realm where creativity meets functionality, I wield the languages of the web like an artist with a paintbrush. <span>As a front-end web developer, I sculpt user interfaces that not only captivate the eyes but dance harmoniously with the user's every interaction.</span> I breathe life into pixels, turning lines of code into seamless and immersive web experiences.</p>
+        <p>In the digital realm where creativity meets functionality, I wield the languages of the web like an artist with a paintbrush. <span>As a front-end web developer,</span> I sculpt user interfaces that not only captivate the eyes but dance harmoniously with the user's every interaction. I breathe life into pixels, turning lines of code into seamless and immersive web experiences.</p>
+        <div class="techStack-box" id="techStack">
+            <span class="icon-stack"><i class='bx bx-coin-stack'></i></span>
+            <h3>Tech Stack</h3>
+            <div class="tech">
+                <div class="JavaScript" title="Programming Language">
+                    JavaScript
+                </div>
+                <div class="Bootstrap" title="Css Framework">
+                    Bootstrap
+                </div>
+                <div class="React" title="JS Library">
+                    React
+                </div>
+                <div class="Tailwind" title="Css Framework">
+                    Tailwind
+                </div>
+                <div class="Zustand" title="React State management library">
+                    Zustand
+                </div>
+                <div class="gsap" title="Animation library">
+                    GSAP
+                </div>
+                <div class="Firebase" title="Backend as a service platform">
+                    Firebase
+                </div>
+            </div>
+        </div>
+
         <a href="https://www.linkedin.com/in/tajamul-farooz-wani/" class="btn" target="_blank">Let's Connect</a>
 
     </div>
@@ -65,7 +93,7 @@
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
-                <p> As a front-end web developer, I transform ideas into engaging online experiences. Armed with HTML, CSS, JavaScript, React and Firebase, I sculpt the visual and interactive elements that users see and engage with on websites.</p>
+                <p> As a front-end web developer, I transform ideas into engaging online experiences. Armed with Frontend Techstack, I sculpt the visual and interactive elements that users see and engage with on websites.</p>
                
                 
             </div>
@@ -81,18 +109,7 @@
                 <h3>Performance Optimization</h3>
                 <p>Optimizing code and assets to improve website loading times and overall performance. Hence not only development looks great but also loads quickly and efficiently, providing users with a positive and responsive browsing experience.</p>
             </div>
-            <div class="services-box">
-                <i class='bx bx-coin-stack' ></i>
-                <h3>Tech Stack</h3>
-                      <ul>
-                    <li><i class='bx bxl-javascript' title="JavaScript"></i></li>
-                    <li><i class='bx bxl-bootstrap' title="Bootstrap"></i></li>
-                    <li><i class='bx bxl-tailwind-css' title="Tailwind"></i></li>
-                    <li><i class='bx bxl-react' title="React"></i></li>
-                    <li><i class='bx bxl-git' title="Git"></i></li>
-                    <li><i class='bx bxl-firebase' title="Firebase"></i></li>   
-                </ul>
-            </div>
+          
         </div>
      </section>
 
@@ -157,14 +174,14 @@
                     <div class="contact-form">
                         <form action="#" name="contact" netlify>
                             <div class="inputBox">
-                                <input type="text" placeholder="FullName">
-                                <input type="email" placeholder="Email">
+                                <input type="text" placeholder="FullName" required>
+                                <input type="email" placeholder="Email" required>
                             </div>
                             <div class="inputBox">
-                                <input type="number" placeholder="Number">
-                                <input type="text" placeholder=" Email Subject ">
+                                <input type="number" placeholder="Number" required>
+                                <input type="text" placeholder=" Email Subject " required>
                             </div>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                             <input type="submit" value="Send Message" class="btn">
 
                         </form>

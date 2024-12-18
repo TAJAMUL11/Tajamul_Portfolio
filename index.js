@@ -37,12 +37,31 @@ window.onscroll = () => {
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100 );
-/* =============================================== Remove  toggle icon and navbar when navbar link (scroll)=============================================*/
-menuIcon.classList.remove('bx-x');/* so these remove the block links off the screen once we click on one of them*/
+
+menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
 
 };
+
+window.addEventListener('scroll', () => {
+    const offerBoxes = document.querySelectorAll('.Projects-box');
+  
+    offerBoxes.forEach(box => {
+      const rect = box.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+  
+      // Check if the box is within a certain distance from the viewport
+      if (rect.top < viewportHeight * 1) {
+        box.classList.add('show-projectBox');
+  
+        // After a delay, remove the 'show-offer' class to reset the animation
+        setTimeout(() => {
+          box.classList.remove('show-projectBox');
+        }, 2000); // Adjust the delay as needed
+      }
+    });
+  });
 
 
 /* ================================= ScrollReveal JS file========================================== */
@@ -55,7 +74,7 @@ ScrollReveal({
 
 });
 
-ScrollReveal().reveal('.home-content, .heading ', { origin : "top"});
+ScrollReveal().reveal('.home-content, .heading, .tech div ', { origin : "top"});
 ScrollReveal().reveal('.home-img, .skills-container', { origin : "bottom"});
 
 

@@ -28,6 +28,9 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+img{
+    display: block;
+}
 
 section{  
     min-height: 100vh;
@@ -112,7 +115,7 @@ section{
 .home-img img{
     display: block;
     width: 20vw;
-    clip-path: circle(55%);
+    border-radius: 30%;
     transition: 0.5s ease;
     animation: floatIn 3s ease-in-out infinite;
 }
@@ -199,13 +202,14 @@ span{
 }
 
 .about-img img{
+    background-color: var(--text-color);
     width: 25vw;
+    object-fit: contain;
     margin-bottom: 5%;
-    border-radius: 50%;
+    border-radius: 30%;
     transition: 0.5s ease;
     margin-right: 1.7rem;
     box-shadow: 0 0.3rem 0.9rem var(--bg-color);
-    animation: floatIn 3s ease-in-out infinite alternate-reverse;
     
 }
 
@@ -226,6 +230,77 @@ span{
     letter-spacing: .01rem;
     word-spacing: .1rem;
 }
+
+.about-content .techStack-box{
+ padding: 1rem 2.5rem;
+  max-width: 410px;
+  margin: 0 auto;
+  border-radius: 5%;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.techStack-box h3{
+    font-size: 3.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.techStack-box .icon-stack{
+    font-size: 8rem;
+}
+
+.techStack-box .tech{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem 1rem;
+    place-content: center;
+
+}
+.tech div{
+    padding: 1.1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.tech div:hover,
+.tech div:focus{
+    outline: 1px solid var(--text-color);
+}
+
+.tech div.JavaScript{
+    background-color: rgba(255, 255, 0, 0.51);
+    transform: rotate(9deg);
+}
+.tech div.Bootstrap{
+    background-color: purple;
+
+}
+.tech div.React{
+    background-color: dodgerblue;
+    transform: rotate(-9deg);
+
+}
+.tech div.gsap{
+    background-color: black;
+    transform: rotate(-9deg);
+
+}
+.tech div.Zustand{
+    background-color: #1c1818;
+
+}
+.tech div.Firebase{
+    background-color: #ffa600b1;
+    transform: rotate(-5deg);
+
+}
+.tech div.Tailwind{
+    background-color: rgb(69, 133, 155);
+
+}
+
 
 /* services section */
 
@@ -276,20 +351,6 @@ span{
     word-spacing: .1rem;
 }
 
-.services-box ul li{
-    display: inline-block;
-    list-style: none;
-    font-size: 1.6rem;
-    margin: .7rem 0;
-    color: var(--main-color);
-    font-weight: 600;
-}
-.services-box ul li i{
-    font-size: 5rem;
-    margin: 0 1.7rem;
-    color: var(--main-color);
-}
-
 
 /* Projects design*/
 
@@ -332,7 +393,7 @@ span{
     left: 0;
     width:100% ;
     height: 100%;
-    background: #222222da;
+    background: linear-gradient(rgba(0 ,0, 0, 1),rgba(0 ,0, 0, 0.7));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,11 +402,17 @@ span{
     padding: 0 4rem;
     transform: translateY(100%); 
     transition: 0.5s ease;
+    opacity: 0;
 
 }
 
 .Projects-box:hover .Project-layer{
     transform: translateY(0);
+    opacity: 1;
+}
+.Projects-box.show-projectBox .Project-layer{
+    opacity: 1;
+    transform: translateY(0); 
 }
 
 .Project-layer h4{
@@ -366,7 +433,7 @@ span{
     border-radius: 50%;
 }
 .Project-layer a i {
-    font-size: 2rem;
+    font-size: 2.1rem;
     color: var(--second-bg-color);
     box-shadow: none;
 
@@ -479,7 +546,7 @@ span{
         font-size: 2rem;
     }
     .Project-layer p{
-        font-size: 1.6rem;
+        font-size: 1.25rem;
     }
     .Project-layer a{
         margin-top: 0.8rem;
@@ -495,7 +562,7 @@ span{
         font-size: 1.8rem;
     }
     .Project-layer p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
 }
@@ -526,11 +593,14 @@ span{
     .footer{
         padding: 2rem 3%;
     }
+    .Projects-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .Project-layer h4{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     .Project-layer p{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
 
@@ -596,12 +666,6 @@ span{
 
     .Projects h2{
         margin-bottom: 3rem;
-    }
-    .Projects-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .Project-layer h4{
-        font-size: 2rem;
     }
 
 }
