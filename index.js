@@ -3,14 +3,14 @@ let navbar = document.querySelector(".navbar");
 const dateYear = document.querySelector(".year");
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
-console.log(dateYear);
 
 menuIcon.onclick = () => {
   /* for on and off of the menu icons*/
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
 };
-dateYear.innerHTML = new Date().getFullYear();
+let currentYear = new Date().getFullYear();
+dateYear.innerHTML = `2024-${currentYear}`
 
 window.onscroll = () => {
   sections.forEach((sec) => {
