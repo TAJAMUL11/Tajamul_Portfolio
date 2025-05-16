@@ -11,7 +11,6 @@ menuIcon.onclick = () => {
 };
 let currentYear = new Date().getFullYear();
 dateYear.innerHTML = `2024-${currentYear}`
-
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
