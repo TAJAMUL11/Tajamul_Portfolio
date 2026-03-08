@@ -10,7 +10,7 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 let currentYear = new Date().getFullYear();
-dateYear.innerHTML = `2024-${currentYear}`
+dateYear.innerHTML = `2024-${currentYear}`;
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
@@ -51,6 +51,38 @@ window.addEventListener("scroll", () => {
         box.classList.remove("show-projectBox");
       }, 2000); // Adjust the delay as needed
     }
+  });
+});
+
+/* ================================= Projects Filter ========================================== */
+const filterBtns = document.querySelectorAll(".filter-btn");
+const projectBoxes = document.querySelectorAll(".Projects-box");
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Remove active class from all buttons
+    filterBtns.forEach((b) => b.classList.remove("active"));
+
+    // Add active class to clicked button
+    btn.classList.add("active");
+
+    // Get the filter value
+    const filterValue = btn.getAttribute("data-filter");
+
+    // Filter projects
+    projectBoxes.forEach((box) => {
+      const boxCategory = box.getAttribute("data-category");
+
+      if (filterValue === "all" || boxCategory === filterValue) {
+        // Show project
+        setTimeout(() => {
+          box.classList.remove("hidden");
+        }, 0);
+      } else {
+        // Hide project
+        box.classList.add("hidden");
+      }
+    });
   });
 });
 
