@@ -72,8 +72,9 @@ filterBtns.forEach((btn) => {
     // Filter projects
     projectBoxes.forEach((box) => {
       const boxCategory = box.getAttribute("data-category");
+      const categories = boxCategory.split(" ");
 
-      if (filterValue === "all" || boxCategory === filterValue) {
+      if (filterValue === "all" || categories.includes(filterValue)) {
         // Show project
         setTimeout(() => {
           box.classList.remove("hidden");
