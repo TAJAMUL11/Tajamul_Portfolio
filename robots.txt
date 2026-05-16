@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tajamulportfolio.netlify.app/sitemap.xml
+Sitemap: https://tajamulwani.netlify.app/sitemap.xml
