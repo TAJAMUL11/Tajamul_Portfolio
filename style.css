@@ -102,8 +102,8 @@ section {
 }
 .home-img img {
   display: block;
-  width: 25vw;
-  border-radius: 20px;
+  width: 27vw;
+  border-radius: 5%;
   transition: 0.5s ease;
   animation: floatIn 3s ease-in-out infinite;
 }
