@@ -478,11 +478,11 @@ span {
 }
 
 .Project-layer h4 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--main-color);
 }
 .Project-layer p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0.3rem 0 1rem;
 }
 .Project-layer a {
@@ -732,7 +732,6 @@ span {
   flex: 1;
   text-align: center;
 }
-
 
 /* Back to Top Button */
 .back-to-top {
@@ -1067,12 +1066,12 @@ span {
     font-size: 1.2rem;
   }
   .projects-filter {
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
   }
   .filter-btn {
-    padding: 0.6rem 1rem;
-    font-size: 1.1rem;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
     border-radius: 0.6rem;
   }
   .about-content h2 {
